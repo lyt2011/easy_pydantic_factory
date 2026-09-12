@@ -1,0 +1,15 @@
+[project]
+name = "easy-factory"
+version = "1.0.0"
+description = "Pydantic model factory with field-based dispatch"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/easy_factory"]
